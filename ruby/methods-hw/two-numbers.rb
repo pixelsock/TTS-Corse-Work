@@ -19,5 +19,4 @@ def do_the_numbers(x,y,z)
 end
 
 symbol_choice = gets.chomp.upcase
-
 puts "#{do_the_numbers(nums[0],symbol_choice,nums[1])}.\nLet's do it again.\n\n"
