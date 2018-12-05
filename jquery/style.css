@@ -1,0 +1,18 @@
+#circle {
+height:155px;
+width: 155px;
+background-color:green;
+border-radius: 50%;
+display: inline-block;
+}
+
+.square {
+  background-color: red;
+  display: inline-block;
+  width: 155px;
+  height: 155px;
+}
+
+.wide {
+  width: 400px;
+}

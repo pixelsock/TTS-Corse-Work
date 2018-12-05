@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+ <div class="gamebox">
+  <h1>Rock, Paper, Scissors</h1>
+  <h2>You know the drill - Rock beats Scissors, Scissor beats Paper, Paper beats Rock.</h2>
+
+  <h3>Select your move:</h3>
+
+
+  <!--Icons for player choice-->
+  <div class="usercontainer">
+    <i id="rock" class="fa fa-hand-rock-o"></i>
+    <i id="paper" class="fa fa-hand-paper-o"></i>
+    <i id="scissors" class="fa fa-hand-scissors-o"></i>
+  </div>
+
+  <div class="computeranswer">
+    <p id="playerResult"></p>
+    <p id="compResult"></p>
+    <p id="winner"</p>
+  </div>
+
+  <!--Scoreboard-->
+  <table>
+    <tr>
+      <th colspan="2">Scoreboard</th>
+    </tr>
+    <tr>
+       <td>Player</td>
+       <td>Computer</td>
+    </tr>
+    <tr>
+       <td id="playerScore">0</td>
+       <td id="compScore">0</td>
+    </tr>
+  </table>
+
+  <button id="reset">Reset</button>
+ </div>
+ <script type="text/javascript" src="rps.js"></script>
+</body>
+</html>
