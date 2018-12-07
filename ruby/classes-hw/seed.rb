@@ -57,6 +57,7 @@ class Tournament_gen
   end
 end
 all_teams = []
+<<<<<<< HEAD
 rank = 0
 puts "Welcome to My Tournament Generator. Enter your 5 teams:"
 #Generate Teams and assign a rank to each team based on the order of input
@@ -65,6 +66,16 @@ puts "Enter team ##{rank+1}:"
 team = gets.chomp
 rank += 1
 new_team = Tournament_gen.new(team,rank)
+=======
+@rank = 0
+puts "Welcome to My Tournament Generator. Enter your 5 teams:"
+#Generate Teams and assign a rank to each team based on the order of input
+until all_teams.length == 5
+puts "Enter team ##{@rank+1}:"
+@team = gets.chomp
+@rank += 1
+new_team = Tournament_gen.new(@team,@rank)
+>>>>>>> d518d5659635d387adab4886ea9e0ad2d7991935
 all_teams.push(new_team)
 end
 
@@ -75,6 +86,7 @@ end
 
 puts "\n\nNow let's see how your teams will be matched up for the first round.\n\nMatchups:"
 round = 0
+<<<<<<< HEAD
 if all_teams.count.odd?
   puts "Buy Week: (#{all_teams.first.rank})#{all_teams.shift.team}"
 end
@@ -83,3 +95,14 @@ until all_teams.length == 0
   round += 1
   puts "Round #{round}: (#{all_teams.first.rank})#{all_teams.shift.team} vs (#{all_teams.last.rank})#{all_teams.pop.team}\n"
 end
+=======
+
+until all_teams.length == 1
+  round += 1
+  puts "Round #{round}: (#{all_teams[0].rank})#{all_teams.shift.team} vs (#{all_teams.last.rank})#{all_teams.pop.team}\n"
+end
+
+  if all_teams.length == 1
+    puts "Buy Week: (#{all_teams[0].rank})#{all_teams[0].team}"
+  end
+>>>>>>> d518d5659635d387adab4886ea9e0ad2d7991935
